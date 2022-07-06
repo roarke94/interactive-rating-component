@@ -1,0 +1,257 @@
+@import url("https://fonts.google.com/specimen/Overpass");
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(217, 12%, 63%);
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --rating-box-bg: #1f2630;
+    --body-font: "Overpass", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Initialization*/
+
+.container {
+    background-color: var(--very-dark-blue);
+    scrollbar-width: none;
+    font-family: var(--body-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    font-family: var(--body-font);
+    background-color: var(--rating-box-bg);
+    width: 415px;
+    height: 415px;
+    border-radius: 1.875rem;
+}
+
+.attribution {
+    color: var(--white);
+    font-size: 0.9375rem;
+}
+
+.attribution a {
+    color: var(--orange);
+}
+
+/*Card container*/
+
+.card-container {
+    display: block;
+    margin-top: 35.5px;
+    margin-left: 35.5px;
+    margin-right: 35.5px;
+}
+
+.star {
+    margin-top: 20px;
+    background-color: var(--dark-blue);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.iconbg {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.card-header {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    color: var(--light-gray);
+    margin-bottom: 36px;
+}
+
+.rating-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.rating-btn {
+    background-color: var(--dark-blue);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.circle-standard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    color: var(--medium-gray);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+}
+
+.circle-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    color: var(--white);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+}
+
+.radio-btn {
+    display: none;
+}
+
+.circle-standard:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.submit {
+    width: 341px;
+    height: 45px;
+    background-color: var(--orange);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--body-font);
+    color: var(--white);
+    letter-spacing: 0.125rem;
+    border-radius: 7.57rem;
+    border: 0;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* Thank You card*/
+
+.thanks-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    margin-top: 35.5px;
+    margin-left: 35.5px;
+    margin-right: 35.5px;
+}
+
+.thank-you {
+    margin-bottom: 32px;
+}
+
+.selected-rating {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 193px;
+    height: 32px;
+    background-color: var(--dark-blue);
+    font-family: var(--body-font);
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 6.03rem;
+    color: var(--orange);
+    margin-bottom: 32px;
+}
+
+.thanks-h1 {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.thanks-text {
+    text-align: center;
+    color: var(--light-gray);
+    size: 0.9375rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width: 500px) {
+    .attribution {
+        font-size: 0.7rem;
+    }
+
+    .card {
+        width: 327px;
+        height: 360px;
+    }
+
+    .star {
+        width: 40.75px;
+        height: 40.75px;
+    }
+
+    .circle-standard{
+        width: 40.75px;
+        height: 40.75px;
+    }
+
+    .circle-active {
+        width: 40.75px;
+        height: 40.75px;
+    }
+
+    .rating-btns {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        margin-bottom: 28px;
+    }
+
+    .submit {
+        width: 257px;
+        height: 45px;
+    }
+
+    .thanks-img {
+        width: 144px;
+        height: 96px;
+    }
+
+    .selected-rating {
+        width: 168px;
+        height: 32px;
+        font-size: 0.875rem;
+        margin-bottom: 25px;
+    }
+
+    .iconbg {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+
+    h1 {
+        font-size: 1.63em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+}
