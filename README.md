@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://roarke94.github.io/interactive-rating-component/)
+- Live Site URL: [Interactive Rating Component](https://roarke94.github.io/interactive-rating-component/)
 
 ## My process
 
